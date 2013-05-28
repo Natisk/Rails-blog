@@ -9288,3 +9288,833 @@ Served asset /posts.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 12:34:27 +0300
 Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2013-05-28 12:56:32 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? AND (title NOT LIKE '%hidden%' ) LIMIT 1[0m  [["id", "1"]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 1
+  Rendered posts/show.html.erb within layouts/application (183.5ms)
+Completed 200 OK in 597ms (Views: 402.2ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 12:56:32 +0300
+Served asset /application.css - 304 Not Modified (83ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 12:56:33 +0300
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-05-28 12:56:33 +0300
+Served asset /posts.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-28 12:56:33 +0300
+Served asset /comments.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 12:56:33 +0300
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 12:56:33 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-28 12:56:33 +0300
+Served asset /comments.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-05-28 12:56:33 +0300
+Served asset /posts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 12:56:33 +0300
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-05-28 13:08:08 +0300
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (title NOT LIKE '%hidden%' )[0m
+  Rendered posts/index.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 196ms (Views: 188.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 13:08:08 +0300
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 13:08:08 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 13:08:08 +0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 13:08:08 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-05-28 13:08:08 +0300
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-28 13:08:08 +0300
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-28 13:08:08 +0300
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-05-28 13:08:08 +0300
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 13:08:08 +0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-05-28 13:09:06 +0300
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" WHERE (title NOT LIKE '%hidden%' )
+  Rendered posts/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 88ms (Views: 86.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 13:09:07 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-05-28 13:09:07 +0300
+Served asset /posts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 13:09:07 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 13:09:07 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 13:09:07 +0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-28 13:09:07 +0300
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-28 13:09:07 +0300
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-05-28 13:09:07 +0300
+Served asset /posts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 13:09:07 +0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-05-28 13:09:50 +0300
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (title NOT LIKE '%hidden%' )[0m
+  Rendered posts/index.html.erb within layouts/application (13.6ms)
+Compiled application.css  (3ms)  (pid 18246)
+Completed 200 OK in 158ms (Views: 156.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 13:09:50 +0300
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 13:09:50 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-05-28 13:09:50 +0300
+Served asset /posts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-28 13:09:50 +0300
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 13:09:50 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-28 13:09:50 +0300
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 13:09:50 +0300
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-05-28 13:09:50 +0300
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 13:09:50 +0300
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-05-28 13:11:52 +0300
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts" WHERE (title NOT LIKE '%hidden%' )
+  Rendered posts/index.html.erb within layouts/application (26.0ms)
+Compiled application.css  (7ms)  (pid 18246)
+Completed 200 OK in 180ms (Views: 176.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-28 13:11:52 +0300
+Served asset /comments.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 13:11:52 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 13:11:52 +0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 13:11:52 +0300
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 13:11:52 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-05-28 13:11:52 +0300
+Served asset /posts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-28 13:11:52 +0300
+Served asset /comments.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-05-28 13:11:52 +0300
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 13:11:52 +0300
+Served asset /application.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-05-28 13:21:58 +0300
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (title NOT LIKE '%hidden%' )[0m
+  Rendered posts/index.html.erb within layouts/application (58.5ms)
+Completed 200 OK in 246ms (Views: 156.0ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 13:21:59 +0300
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-28 13:21:59 +0300
+Served asset /comments.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 13:21:59 +0300
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 13:21:59 +0300
+Served asset /jquery.js - 304 Not Modified (40ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 13:21:59 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-05-28 13:21:59 +0300
+Served asset /posts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-28 13:21:59 +0300
+Served asset /comments.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 13:21:59 +0300
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-05-28 13:21:59 +0300
+Served asset /posts.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-05-28 13:22:26 +0300
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts" WHERE (title NOT LIKE '%hidden%' )
+  Rendered posts/index.html.erb within layouts/application (30.2ms)
+Compiled application.css  (8ms)  (pid 18588)
+Completed 200 OK in 175ms (Views: 170.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 13:22:27 +0300
+Served asset /application.css - 304 Not Modified (83ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 13:22:27 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-05-28 13:22:27 +0300
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 13:22:27 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-28 13:22:27 +0300
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 13:22:27 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-28 13:22:27 +0300
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-05-28 13:22:27 +0300
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 13:22:27 +0300
+Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-05-28 13:26:33 +0300
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (title NOT LIKE '%hidden%' )[0m
+  Rendered posts/index.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 232ms (Views: 169.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 13:26:33 +0300
+Served asset /application.css - 304 Not Modified (50ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 13:26:33 +0300
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 13:26:33 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 13:26:33 +0300
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-05-28 13:26:33 +0300
+Served asset /posts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-28 13:26:33 +0300
+Served asset /comments.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-28 13:26:33 +0300
+Served asset /comments.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-05-28 13:26:33 +0300
+Served asset /posts.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 13:26:33 +0300
+Served asset /application.js - 304 Not Modified (12ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-05-28 13:40:50 +0300
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (title NOT LIKE '%hidden%' )[0m
+  Rendered posts/index.html.erb within layouts/application (115.6ms)
+Compiled application.css  (3ms)  (pid 18762)
+Completed 200 OK in 465ms (Views: 303.7ms | ActiveRecord: 58.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 13:40:51 +0300
+Served asset /application.css - 200 OK (25ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 13:40:51 +0300
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 13:40:51 +0300
+Served asset /jquery.js - 304 Not Modified (43ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-05-28 13:40:51 +0300
+Served asset /posts.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 13:40:51 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-28 13:40:51 +0300
+Served asset /comments.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-28 13:40:51 +0300
+Served asset /comments.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-05-28 13:40:51 +0300
+Served asset /posts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2013-05-28 13:40:51 +0300
+Compiled bootstrap-transition.js  (0ms)  (pid 18762)
+Compiled bootstrap-affix.js  (0ms)  (pid 18762)
+Compiled bootstrap-alert.js  (0ms)  (pid 18762)
+Compiled bootstrap-button.js  (0ms)  (pid 18762)
+Compiled bootstrap-carousel.js  (0ms)  (pid 18762)
+Compiled bootstrap-collapse.js  (0ms)  (pid 18762)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 18762)
+Compiled bootstrap-modal.js  (0ms)  (pid 18762)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 18762)
+Compiled bootstrap-tab.js  (0ms)  (pid 18762)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 18762)
+Compiled bootstrap-popover.js  (0ms)  (pid 18762)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 18762)
+Compiled bootstrap.js  (204ms)  (pid 18762)
+Served asset /bootstrap - 200 OK (285ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 13:40:51 +0300
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-05-28 13:42:29 +0300
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts" WHERE (title NOT LIKE '%hidden%' )
+  Rendered posts/index.html.erb within layouts/application (15.3ms)
+Compiled application.js  (24ms)  (pid 18762)
+Completed 200 OK in 175ms (Views: 173.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 13:42:29 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-28 13:42:29 +0300
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:29 +0300
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:29 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:29 +0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 13:42:29 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-05-28 13:42:29 +0300
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:29 +0300
+Served asset /bootstrap-affix.js - 200 OK (15ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:30 +0300
+Served asset /bootstrap-transition.js - 200 OK (2ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:30 +0300
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:30 +0300
+Served asset /bootstrap-alert.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:30 +0300
+Served asset /bootstrap-carousel.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:30 +0300
+Served asset /bootstrap-button.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:30 +0300
+Served asset /bootstrap-modal.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:30 +0300
+Served asset /bootstrap-scrollspy.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:30 +0300
+Served asset /bootstrap-collapse.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:30 +0300
+Served asset /bootstrap-tab.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:30 +0300
+Served asset /bootstrap-dropdown.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:30 +0300
+Served asset /bootstrap-tooltip.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:30 +0300
+Served asset /bootstrap-popover.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:30 +0300
+Served asset /bootstrap-typeahead.js - 200 OK (10ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:30 +0300
+Served asset /bootstrap.js - 200 OK (22ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2013-05-28 13:42:30 +0300
+Served asset /bootstrap - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 13:42:30 +0300
+Served asset /application.js - 200 OK (34ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-05-28 13:46:35 +0300
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (title NOT LIKE '%hidden%' )[0m
+  Rendered posts/index.html.erb within layouts/application (118.3ms)
+Completed 200 OK in 501ms (Views: 335.7ms | ActiveRecord: 59.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /comments.css - 304 Not Modified (44ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /posts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /comments.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /posts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /bootstrap-affix.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /bootstrap - 304 Not Modified (24ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /application.js - 304 Not Modified (70ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /bootstrap.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-28 13:46:36 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (title NOT LIKE '%hidden%' )[0m
+  Rendered posts/index.html.erb within layouts/application (58.1ms)
+Completed 200 OK in 285ms (Views: 193.6ms | ActiveRecord: 33.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /application.css - 304 Not Modified (61ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /comments.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /posts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /bootstrap-affix.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /posts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /comments.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /bootstrap.js - 304 Not Modified (38ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /application.js - 304 Not Modified (68ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2013-05-28 13:53:12 +0300
+Served asset /bootstrap - 304 Not Modified (21ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (39.0ms)
+  Rendered posts/new.html.erb within layouts/application (58.4ms)
+Completed 200 OK in 159ms (Views: 156.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:15 +0300
+Served asset /bootstrap.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 13:53:16 +0300
+Served asset /application.js - 304 Not Modified (40ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2013-05-28 13:53:16 +0300
+Served asset /bootstrap - 304 Not Modified (1ms)
