@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  before_filter :authenticate_user! :except => [:show, :index]
+  before_filter :authenticate_user!, :except => [:show, :index]
 
   # GET /comments
   # GET /comments.json
