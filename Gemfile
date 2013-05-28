@@ -5,11 +5,10 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
-
 # Gems used only for assets and not required
 # in production environments by default.
-group :assets do  
+group :assets do
+  
   gem 'coffee-rails', '~> 3.2.1'
 
 
@@ -20,10 +19,14 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
+gem 'devise', "~> 3.0.0.rc"
 
 gem 'sass-rails', '~> 3.2'
 gem 'bootstrap-sass', '~> 2.3.1.2'
+
+group :production do
+  gem 'pg', '0.12.2'
+end
 
 
 # To use ActiveModel has_secure_password

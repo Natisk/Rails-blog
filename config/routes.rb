@@ -1,4 +1,7 @@
-Blog15min::Application.routes.draw do
+Blog15min::Application.routes.draw do  
+
+  devise_for :users, :path_names=>{sign_up: 'register'}
+
   resources :posts do
     resources :comments
   end
