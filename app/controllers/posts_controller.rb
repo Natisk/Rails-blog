@@ -18,6 +18,7 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @post = Post.nothidden.find(params[:id])
+    @comment = @post.comments.build
 
     respond_to do |format|
       format.html # show.html.erb
