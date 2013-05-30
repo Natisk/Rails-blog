@@ -7,15 +7,33 @@
 	  <%= csrf_meta_tags %>
 	</head>
 	<body class="body">
-		<div id="user_nav">
-			<% if user_signed_in? %>
-			 	Signed in <%= current_user.email %> Not you?
-			 	<%= link_to "Sign out", destroy_user_session_path, method:  :delete, confirm: "You sure?"%>
-			<% else %>
-				<%= link_to "Sign up", new_user_registration_path %> or <%= link_to "Sign in", new_user_session_path %>
-			<% end %>
-		</div>
-		<%= yield %>
-
+        <div class="contailner">
+          <div class="wrapper">
+            <div class="cont">
+              <div class="cont_inner">
+                <%= yield %>
+              </div>
+              <div class="add_space"></div>
+            </div>
+            <div class="footer">
+              Copyright © Natisk <%= Time.now.strftime("%Y") %> год. Все права защищены
+            </div>
+          </div>
+          <div class="header">
+            <div class="header_wrapper">
+                <div class="logo">
+                  <%= link_to "blog", root_path, :class=>"btn"  %>
+                </div>
+                <div id="user_nav">
+                  <% if user_signed_in? %>
+                      Signed in <%= current_user.email %> Not you?
+                      <%= link_to "Sign out", destroy_user_session_path, :class=>"btn", method:  :delete, confirm: "You sure?"%>
+                  <% else %>
+                      <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "Sign in", new_user_session_path, :class=>"btn" %>
+                  <% end %>
+                </div>
+            </div>
+          </div>
+        </div>
 	</body>
 </html>

@@ -11,3 +11,101 @@
  *= require_self
  *= require_tree 
  */
+html, body {
+    height: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.contailner {
+    width: 960px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.cont {
+    min-height: 100%;
+}
+
+.cont_inner {
+    padding: 100px 10px 10px 10px;
+}
+
+.add_space {
+    height: 100px;
+}
+
+.footer {
+    margin: -100px 0 0 0;
+    background: #eeeeee;
+    border-radius: 8px 8px 8px 8px;
+    height: 58px;
+    padding: 40px 30px 0 30px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5) inset;
+}
+
+.header {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 78px;
+    background: #eeeeee;
+    border-radius: 8px 8px 8px 8px;
+    width: 940px;
+    padding: 10px 10px 10px 10px;
+    text-align: right;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5) inset;
+}
+
+.header_wrapper {
+    position: relative;
+    width: 940px;
+}
+.logo {
+    position: absolute;
+    top: 3px;
+    left: 10px;
+}
+
+.logo a {
+    color: #555555;
+    font-size: 40px;
+    display: block;
+    height: 50px;
+    padding: 20px 10px 0 10px;
+}
+
+.cont_inner a {
+    color: #0077CC;
+    background: none;
+}
+
+.cont_inner a:hover,
+.cont_inner a:visited {
+    text-decoration: underline;
+    background: none;
+    color: #0077CC;
+}
+
+.comment_body {
+    background: #f7f7f7;
+    padding: 5px 5px 5px 5px;
+}
+
+.comment {
+    border-bottom: solid 1px #f7f7f7;
+    margin: 0 0 20px 0;
+}
+
+.comment p {
+    margin: 0 0 2px 0;
+}
+
+#new_comment textarea {
+    height: 100px;
+}

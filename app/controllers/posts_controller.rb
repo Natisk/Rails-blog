@@ -2,11 +2,8 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    
-    #@posts = Post.where "title  NOT LIKE '%hidden%' "
-
-    #@posts = Post.all.delete_if {|post| post.title.include? "hidden"}
-    @posts = Post.nothidden
+    @posts = Post.nothidden.page(params[:page]).per(3)
+    #@posts = Post.nothidden.order(:name).page(params[:page]).per(2)
 
     respond_to do |format|
       format.html # index.html.erb

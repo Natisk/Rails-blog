@@ -1,45 +1,48 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
-  <%= @post.title %>
-</p>
+<div class="post_title">
+  <b>Post:</b>
+  <span><%= @post.title %></span>
+</div>
 
-<p>
-  <b>Body:</b>
-  <%= @post.body %>
-</p>
+<div class="post_body">
+  <pre><%= @post.body %></pre>
+</div>
 
-<p>
-  <b>Data:</b>
-  <%= @post.data %>
-</p>
+<div class="post_date">
+  <b>Date:</b>
+  <span><%= @post.data %></span>
+</div>
 
 <h2>Comments</h2>
+
+
 <% @post.comments.each do |comment| %>
+  <div class="comment">
   <p>
     <strong>Commenter:</strong>
     <%= comment.commenter %>
   </p>
  
-  <p>
-    <strong>Comment:</strong>
+  <div class="comment_body">
     <%= comment.body %>
-  </p>
+  </div>
       <% if comment.user_id == current_user.id %>
         <div class="edit_com">
-            <%= link_to "Edit", edit_post_comment_path(@post, comment)%>
+            <%= link_to "Edit", edit_post_comment_path(@post, comment), :class=>"btn" %>
         </div>
       <%end%>
-
+  </div>
 
 <% end %>
 
 
 
 
+
+
 <h2>Add a comment:</h2>
- <%= render :partial => 'comments/form'%>
+ <%= render :partial => 'comments/form' %>
 
 
 
