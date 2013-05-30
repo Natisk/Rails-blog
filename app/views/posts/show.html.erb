@@ -26,27 +26,21 @@
     <strong>Comment:</strong>
     <%= comment.body %>
   </p>
+      <% if comment.user_id == current_user.id %>
+        <div class="edit_com">
+            <%= link_to "Edit", edit_post_comment_path(@post, comment)%>
+        </div>
+      <%end%>
+
+
 <% end %>
 
 
 
 
 <h2>Add a comment:</h2>
+ <%= render :partial => 'comments/form'%>
 
-<%= form_for([@post, @comment]) do |f| %>
-
-  <div class="field">
-    <%= f.label :commenter %><br />
-    <%= f.text_field :commenter %>
-  </div>
-  <div class="field">
-    <%= f.label :body %><br />
-    <%= f.text_area :body %>
-  </div>  
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
 
 
 
