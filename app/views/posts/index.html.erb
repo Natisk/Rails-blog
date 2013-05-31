@@ -1,5 +1,9 @@
 <h1 class="to_c selector">List of all posts on this site</h1>
 
+<div class="new_post_cr">
+  <%= link_to 'New Post', new_post_path, :class=>"btn" %>
+</div>
+
 <table class="table table-bordered table-hover table-condensed">
   <tr>
     <th>Title</th>
@@ -15,14 +19,30 @@
     <td><%= post.title %></td>
     <td><%= post.body %></td>
     <td><%= post.data %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td class="action"><%= link_to 'Show', post, :class=>"icon-eye-open", :title=>"Show" %></td>
+    <td class="action">
+      <% if !defined? current_user %>
+        <s>edit</s>
+      <% elsif post.user == current_user %>
+        <%= link_to 'Edit', edit_post_path(post), :class=>"icon-edit", :title=>"Edit" %>
+      <% else %>
+        <s>edit</s>
+      <% end %>
+    </td>
+    <td class="action">
+      <% if !defined? current_user %>
+          <s>delete</s>
+      <% elsif post.user == current_user %>
+          <%= link_to post, method: :delete, data: {confirm: 'Are you sure?'}, :class=>"icon-fire", :title=>"Delete post" do %>
+          <% end %>
+      <% else %>
+          <s>delete</s>
+      <%end%>
+    </td>
   </tr>
 <% end %>
 </table>
 <%= paginate @posts %>
 
-<br />
 
-<%= link_to 'New Post', new_post_path, :class=>"btn btn-info" %>
+

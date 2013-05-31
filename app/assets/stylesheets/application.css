@@ -66,6 +66,11 @@ html, body {
     position: relative;
     width: 940px;
 }
+
+a {
+    outline: none;
+}
+
 .logo {
     position: absolute;
     top: 3px;
@@ -80,16 +85,22 @@ html, body {
     padding: 20px 10px 0 10px;
 }
 
-.cont_inner a {
-    color: #0077CC;
-    background: none;
+.cont_inner h2 {
+    margin: 20px 0 20px 0;
+    font-weight: normal;
 }
 
-.cont_inner a:hover,
-.cont_inner a:visited {
-    text-decoration: underline;
-    background: none;
-    color: #0077CC;
+.cont_inner table td.action {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cont_inner td.action a {
+    text-indent: -9999em;
+}
+
+.cont_inner td.action a:hover {
+    background-color: transparent;
 }
 
 .comment_body {
@@ -108,4 +119,15 @@ html, body {
 
 #new_comment textarea {
     height: 100px;
+}
+
+.new_post_cr {
+    text-align: right;
+    margin: 0 0 10px 0;
+}
+
+/* pagination */
+
+nav.pagination {
+    text-align: center;
 }

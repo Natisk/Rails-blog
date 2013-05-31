@@ -3,5 +3,5 @@ class Post < ActiveRecord::Base
   validates :title, :body, :presence => true  
   has_many :comments, :dependent => :destroy
   scope :nothidden, -> { where("title  NOT LIKE '%hidden%' ") }
-
+  belongs_to :user
 end

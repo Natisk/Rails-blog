@@ -19,17 +19,26 @@
 
 <% @post.comments.each do |comment| %>
   <div class="comment">
-  <p>
-    <strong>Commenter:</strong>
-    <%= comment.commenter %>
-  </p>
- 
-  <div class="comment_body">
-    <%= comment.body %>
-  </div>
-      <% if comment.user_id == current_user.id %>
+      <div class="commenter">
+        <strong>Commenter:</strong>
+        <%= puts comment.id %>
+        <%= comment.user.email %>
+      </div>
+      <div class="comment_body">
+        <%= comment.body %>
+      </div>
+
+      <% if !defined? current_user  %>
+        <div class="u_cant">
+          you are not sign in - you are not able to edit comments
+        </div>
+      <%elsif comment.user == current_user %>
         <div class="edit_com">
-            <%= link_to "Edit", edit_post_comment_path(@post, comment), :class=>"btn" %>
+          <%= link_to "Edit", edit_post_comment_path(@post, comment), :class=>"btn" %>
+        </div>
+      <%else%>
+        <div class="u_cant">
+          you can`t edit this post
         </div>
       <%end%>
   </div>
@@ -37,15 +46,12 @@
 <% end %>
 
 
-
-
-
-
 <h2>Add a comment:</h2>
  <%= render :partial => 'comments/form' %>
 
-
-
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
+<% unless @post.user == current_user %>
+    <s>Edit</s>
+<% else %>
+    <%= link_to 'Edit', edit_post_path(@post) %> |
+<%end%>
 <%= link_to 'Back', posts_path %>
