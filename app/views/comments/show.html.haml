@@ -1,0 +1,16 @@
+%p#notice= notice
+%p
+  %b Commenter:
+  = @comment.commenter
+%p
+  %b Body:
+  = @comment.body
+%p
+  %b Post:
+  = @comment.post
+- if comment.user_id == current_user.id
+  .edit_com
+    = link_to "Edit", edit_post_comment_path(@post, comment)
+= link_to 'Edit', edit_comment_path(@comment)
+|
+\#{link_to 'Back', comments_path}

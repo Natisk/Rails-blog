@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
   before_filter :authenticate_user!, :except => [:show, :index]
+  before_filter :current_post, :only => [:update, :destroy, :edit]
+
   # GET /posts
   # GET /posts.json
   def index
@@ -37,7 +39,6 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
-    @post = current_user.posts.find(params[:id])
   end
 
   # POST /posts
@@ -57,31 +58,29 @@ class PostsController < ApplicationController
   end
 
   # PUT /posts/1
-  # PUT /posts/1.json
   def update
-    @post = current_user.posts.find(params[:id])
-
-    respond_to do |format|
-      if @post.update_attributes(params[:post])
-        format.html { redirect_to @post, notice: 'Post was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
-      end
+    if @post.update_attributes(params[:post])
+      redirect_to @post, notice: 'Post was successfully updated.'
+    else
+      render action: "edit"
     end
   end
 
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
-    @post = current_user.posts.find(params[:id])
     @post.destroy
 
     respond_to do |format|
       format.html { redirect_to posts_url }
       format.json { head :no_content }
     end
-  end  
+  end
+
+  private
+
+  def current_post
+    @post = current_user.posts.find(params[:id])
+  end
 
 end

@@ -17,7 +17,7 @@ html, body {
     padding: 0 0 0 0;
 }
 
-.contailner {
+.container1 {
     width: 960px;
     margin: 0 auto;
     height: 100%;
@@ -130,4 +130,14 @@ a {
 
 nav.pagination {
     text-align: center;
+}
+
+.delete_btn {
+    text-indent: -9999px;
+}
+
+.delete_btn a {
+    display: block;
+    height: 14px;
+    width: 14px;
 }

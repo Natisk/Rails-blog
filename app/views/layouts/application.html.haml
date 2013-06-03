@@ -1,0 +1,26 @@
+%html
+  %head
+    %title Blog15min
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body.body
+    .container1
+      .wrapper
+        .cont
+          .cont_inner
+            = yield
+          .add_space
+        .footer
+          Copyright © Natisk #{Time.now.strftime("%Y")} год. Все права защищены
+      .header
+        .header_wrapper
+          .logo
+            = link_to "blog", root_path, :class=>"btn"
+          #user_nav
+            - if user_signed_in?
+              Loged in #{current_user.email} Not you?
+              \#{link_to "Log out", destroy_user_session_path, :class=>"btn", method:  :delete, confirm: "You sure?"}
+            - else
+              = link_to "Register", new_user_registration_path, :class=>"btn"
+              or #{link_to "Log in", new_user_session_path, :class=>"btn"}

@@ -26,6 +26,8 @@ gem 'bootstrap-sass', '~> 2.3.1.2'
 gem 'kaminari'
 
 gem 'pg', '0.15.1'
+gem 'html2haml'
+gem 'haml-rails'
 
 
 
