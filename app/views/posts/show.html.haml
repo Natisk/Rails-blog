@@ -7,6 +7,12 @@
 .post_date
   %b Date:
   %span= @post.data
+.tags
+  - unless @post.tags.empty?
+    - @post.tags.each do |tag|
+      |
+      = link_to tag.tag_word, tags_path(tag=>params[:id])
+    |
 %h2 Comments
 - @post.comments.each do |comment|
   .comment
@@ -16,20 +22,19 @@
       = comment.user.email
     .comment_body
       = comment.body
-    - if !defined? current_user
-      .u_cant
-        you are not sign in - you are not able to edit comments
-    - elsif comment.user == current_user
-      .edit_com
-        = link_to "Edit", edit_post_comment_path(@post, comment), :class=>"btn"
-    - else
-      .u_cant
-        you can`t edit this post
+    - if user_signed_in?
+      - if comment.user_id == current_user.id
+        .edit_com
+          = link_to "Edit", edit_post_comment_path(@post, comment), :class=>"btn"
+      - else
+        .u_cant
+          you can`t edit this post
+
 %h2 Add a comment:
 = render :partial => 'comments/form'
 - unless @post.user == current_user
-  %s Edit
-- else
   = link_to 'Edit', edit_post_path(@post)
+- else
+  %s Edit
   |
 = link_to 'Back', posts_path

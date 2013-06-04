@@ -15,6 +15,13 @@
     = f.label :body
     %br/
     = f.text_area :body
+  .field
+    = f.label :Tags
+    %br/
+    = f.fields_for :tags, Tag.new do |tag_field|
+      = tag_field.text_field :tag_word
+
+    -#= f.autocomplete_field :tags, :url => tags_path
   .for_img
     %img{:src => "/image1.jpg"}/
   .field

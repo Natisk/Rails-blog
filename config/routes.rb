@@ -1,10 +1,19 @@
-Blog15min::Application.routes.draw do  
-
+Blog15min::Application.routes.draw do
+  root :to => 'posts#index'
   devise_for :users, :path_names=>{sign_up: 'register'}
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
+
 
   resources :posts do
     resources :comments
+    get :autocomplete_tag_name, :on => :collection
   end
+
+  resources :tags
 
 
   #resources :comments

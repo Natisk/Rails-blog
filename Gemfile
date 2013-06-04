@@ -19,7 +19,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'devise', "~> 3.0.0.rc"
+gem 'devise'
 
 gem 'sass-rails', '~> 3.2'
 gem 'bootstrap-sass', '~> 2.3.1.2'
@@ -28,6 +28,10 @@ gem 'kaminari'
 gem 'pg', '0.15.1'
 gem 'html2haml'
 gem 'haml-rails'
+gem 'activeadmin'
+gem 'jquery-ui-rails'
+gem 'acts-as-taggable-on'
+gem 'rails3-jquery-autocomplete'
 
 
 

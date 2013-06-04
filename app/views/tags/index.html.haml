@@ -1,0 +1,21 @@
+%h1.to_c.selector List of all tags on this site
+.new_tag_cr
+  = link_to 'New Tag', new_tag_path, :class=>"btn"
+%table.table.table-bordered.table-hover.table-condensed
+  %tr
+    %th ID
+    %th Tag Word
+    %th Edit
+    %th Delete
+  - @tags.each do |tag|
+    %tr
+      %td= tag.id
+      %td= tag.tag_word
+      %td.action
+        = link_to 'Edit', edit_tag_path(tag), :class=>"icon-edit", :title=>"Edit"
+      %td.action
+        .icon-remove.delete_btn
+          = link_to tag, :method=> :delete, :confirm => "Are you sure?"
+
+
+

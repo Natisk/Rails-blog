@@ -6,9 +6,9 @@
     %th Title
     %th Body
     %th Data
-    %th
-    %th
-    %th
+    %th Show
+    %th Edit
+    %th Delete
   - @posts.each do |post|
     %tr
       %td= post.title
@@ -16,18 +16,15 @@
       %td= post.data
       %td.action= link_to 'Show', post, :class=>"icon-eye-open", :title=>"Show"
       %td.action
-        - if !defined? current_user
-          %s edit
-        - elsif post.user == current_user
-          = link_to 'Edit', edit_post_path(post), :class=>"icon-edit", :title=>"Edit"
-        - else
-          %s edit
+        - if user_signed_in?
+          - if post.user == current_user
+            = link_to 'Edit', edit_post_path(post), :class=>"icon-edit", :title=>"Edit"
+          - else
+            %s edit
       %td.action
-        - if !defined? current_user
-          %s delete
-        - elsif post.user == current_user
-          .icon-remove.delete_btn
+        - if user_signed_in?
+          - if post.user == current_user
             = link_to post, :method=> :delete, :confirm => "Are you sure?"
-        - else
-          %s delete
+          - else
+            %s delete
 = paginate @posts

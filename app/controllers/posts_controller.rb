@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_filter :authenticate_user!, :except => [:show, :index]
   before_filter :current_post, :only => [:update, :destroy, :edit]
-
+  autocomplete :tag, :tag_word
   # GET /posts
   # GET /posts.json
   def index
@@ -17,7 +17,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @post = Post.nothidden.find(params[:id])
+    @post = Post.nothidden.includes([:comments, :tags]).find(params[:id])
     @comment = Comment.new
 
     respond_to do |format|
@@ -30,7 +30,7 @@ class PostsController < ApplicationController
   # GET /posts/new.json
   def new
     @post = Post.new
-
+    @tag = Tag.new
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @post }
@@ -45,7 +45,7 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(params[:post])
-
+    @tag = Tag.new
     respond_to do |format|
       if @post.save
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
