@@ -1,0 +1,21 @@
+.tags_list
+  %h3 Tags list
+  - @tags = Tag.all
+  - @tags.each do |tag|
+    %span
+      = link_to tag.tag_word, tag_path(tag.id)
+
+- if user_signed_in?
+  .user_posts
+    %h3 Your last posts
+    - @user_posts = current_user.posts.order("created_at desc").limit(5)
+    - @user_posts.each do |user_post|
+      %p Post title
+      %p
+        = link_to user_post.title, post_path(user_post.id)
+      - if user_post.status
+        .approved
+          approved
+      - else
+        .unapproved
+          unapproved

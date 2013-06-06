@@ -1,40 +1,46 @@
-%p#notice= notice
-.post_title
-  %b Post:
-  %span= @post.title
-.post_body
-  %pre= @post.body
-.post_date
-  %b Date:
-  %span= @post.data
-.tags
-  - unless @post.tags.empty?
-    - @post.tags.each do |tag|
-      |
-      = link_to tag.tag_word, tags_path(tag=>params[:id])
-    |
-%h2 Comments
-- @post.comments.each do |comment|
-  .comment
-    .commenter
-      %strong Commenter:
-      = puts comment.id
-      = comment.user.email
-    .comment_body
-      = comment.body
-    - if user_signed_in?
-      - if comment.user_id == current_user.id
-        .edit_com
-          = link_to "Edit", edit_post_comment_path(@post, comment), :class=>"btn"
-      - else
-        .u_cant
-          you can`t edit this post
+.sidebar-first
+  = render :partial => 'mylayouts/sidebar.html'
+.main_content
+  -if notice
+    %p#notice
+      = notice
+  .post_page
+    .post_title
+      %b Post:
+      %span= @post.title
+    .post_body
+      %pre= @post.body
+    .post_date
+      %b Date:
+      %span= @post.data
+    .tags
+      - unless @post.tags.empty?
+        - @post.tags.each do |tag|
+          |
+          = link_to tag.tag_word, tag_path(tag.id)
+        |
+    %h2 Comments
+    - @post.comments.each do |comment|
+      .comment
+        .commenter
+          %strong Commenter:
+          = puts comment.id
+          = comment.user.email
+        .comment_body
+          = comment.body
+        - if user_signed_in?
+          - if comment.user_id == current_user.id
+            .edit_com
+              = link_to "Edit", edit_post_comment_path(@post, comment), :class=>"btn"
+          - else
+            .u_cant
+              you can`t edit this post
 
-%h2 Add a comment:
-= render :partial => 'comments/form'
-- unless @post.user == current_user
-  = link_to 'Edit', edit_post_path(@post)
-- else
-  %s Edit
-  |
-= link_to 'Back', posts_path
+    %h2 Add a comment:
+    = render :partial => 'comments/form'
+    - unless @post.user == current_user
+      %s Edit
+    - else
+      = link_to 'Edit', edit_post_path(@post)
+      |
+    = link_to 'Back', posts_path

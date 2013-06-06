@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.nothidden.page(params[:page]).per(3)
+    @posts = Post.nothidden.order("created_at desc").page(params[:page]).per(5)
     #@posts = Post.nothidden.order(:name).page(params[:page]).per(2)
 
     respond_to do |format|
@@ -29,7 +29,11 @@ class PostsController < ApplicationController
   # GET /posts/new
   # GET /posts/new.json
   def new
-    @post = Post.new
+    @post = current_user.posts.new(params[:post])
+    #@post = Post.unapproved.new
+    @posts = current_user.posts
+    #@post.user_id = current_user.id
+    #@tag = @post.tags.find_or_create_by_tag_word(:tag_word)
     @tag = Tag.new
     respond_to do |format|
       format.html # new.html.erb
@@ -44,10 +48,15 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
-    @post = Post.new(params[:post])
-    @tag = Tag.new
+    @post = current_user.posts.new(params[:post])
+    @posts = current_user.posts
+    #@post.user_id = current_user.id
+    #@tag = @post.tags.find_or_create_by_tag_word(:tag_word)
+
     respond_to do |format|
-      if @post.save
+      if @posts.unapproved.size >= 3
+        format.html { redirect_to posts_path, notice: 'You cant post more than 3 unapproved posts'  }
+      elsif @post.save
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render json: @post, status: :created, location: @post }
       else

@@ -35,10 +35,22 @@ html, body {
 
 .cont_inner {
     padding: 100px 10px 10px 10px;
+    overflow: hidden;
 }
 
 .add_space {
     height: 100px;
+}
+
+.main_content {
+    float: left;
+    width: 730px;
+}
+
+.sidebar-first {
+    float: right;
+    width: 190px;
+    padding: 40px 0 0 0;
 }
 
 .footer {
@@ -141,4 +153,39 @@ nav.pagination {
     display: block;
     height: 14px;
     width: 14px;
+}
+
+.action-delete {
+    text-indent: -9999px;
+}
+
+.action-delete a {
+    display: block;
+    height: 14px;
+    width: 14px;
+}
+
+span.current {
+    color: blue;
+}
+
+.approved {
+    color: green;
+}
+
+.unapproved {
+    color: red;
+}
+
+/* post index */
+
+.table td.status {
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* post page */
+
+.post_page {
+    padding: 55px 0 0 0;
 }

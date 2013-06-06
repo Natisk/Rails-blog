@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0962fe8c-22f6-483b-af8f-a0d4700758c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/admin/comment.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/admin/tag.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/admin/user.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/mylayouts/_sidebar.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/mylayouts/_unapproved_posts.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tags/show.html.haml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/comments/_form.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/comments/edit.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/comments/index.html.erb" afterPath="" />
@@ -33,25 +33,25 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/new.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/posts/_form.html.haml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/tag/index.html.haml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Rails-first-try.iml" afterPath="$PROJECT_DIR$/.idea/Rails-first-try.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/index.html.haml" afterPath="$PROJECT_DIR$/app/views/posts/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tags/index.html.haml" afterPath="$PROJECT_DIR$/app/views/tags/index.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/post.rb" afterPath="$PROJECT_DIR$/app/models/post.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/show.html.haml" afterPath="$PROJECT_DIR$/app/views/posts/show.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/tags_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/tags_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Rails-first-try.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370333654475" ignored="false" />
+    <file path="/Dummy.txt" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370506592215" ignored="false" />
     <file path="/user.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370362331951" ignored="false" />
     <file path="/show.html.erb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370015164735" ignored="false" />
     <file path="/comment.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370273454231" ignored="false" />
@@ -64,25 +64,31 @@
     <file path="/fragment.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370357307739" ignored="false" />
     <file path="/edit.html.erb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1369915284180" ignored="false" />
     <file path="/_form.html.erb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370248141439" ignored="false" />
-    <file path="/posts_controller.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370362395972" ignored="false" />
-    <file path="/post.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370362349384" ignored="false" />
+    <file path="/posts_controller.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370533599953" ignored="false" />
+    <file path="/post.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370529396561" ignored="false" />
     <file path="/kaminari_config.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1369921556091" ignored="false" />
-    <file path="/application.css" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370267774815" ignored="false" />
+    <file path="/application.css" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370519253430" ignored="false" />
     <file path="/Ruby Console" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1369998486993" ignored="false" />
     <file path="/new.html.erb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370003982721" ignored="false" />
     <file path="/_links.erb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370004701248" ignored="false" />
     <file path="/application_controller.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370005683888" ignored="false" />
     <file path="/Gemfile" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370265991671" ignored="false" />
-    <file path="/index.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370359372057" ignored="false" />
+    <file path="/index.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370533806875" ignored="false" />
     <file path="/README.md" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370270202123" ignored="false" />
     <file path="/active_admin.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370274467378" ignored="false" />
     <file path="/tag.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370339225576" ignored="false" />
     <file path="/post_tag.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370337661301" ignored="false" />
     <file path="/routes.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370360208049" ignored="false" />
     <file path="/tag_controller.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370341500713" ignored="false" />
-    <file path="/tags_controller.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370353392296" ignored="false" />
+    <file path="/tags_controller.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370439845257" ignored="false" />
     <file path="/_form.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370346660856" ignored="false" />
-    <file path="/show.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370357677443" ignored="false" />
+    <file path="/show.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370518378989" ignored="false" />
+    <file path="/sidebar.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370509006741" ignored="false" />
+    <file path="/_sidebar.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370516196195" ignored="false" />
+    <file path="/20130606095617_add_status_and_explanation.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370512739950" ignored="false" />
+    <file path="/20130606100739_add_status_and_explanation_to_posts.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370513851609" ignored="false" />
+    <file path="/_unapproved_posts.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370533113913" ignored="false" />
+    <file path="/application.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370527682758" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,19 +108,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="posts_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <file leaf-file-name="tags_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/tags_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="70" selection-start="976" selection-end="976" vertical-scroll-proportion="0.2251407">
+            <state line="10" column="25" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <file leaf-file-name="posts_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="73" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
+            <state line="57" column="49" selection-start="1578" selection-end="1578" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="55" selection-start="90" selection-end="90" vertical-scroll-proportion="0.10227273">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="102" selection-start="1002" selection-end="1002" vertical-scroll-proportion="-15.583333">
               <folding />
             </state>
           </provider>
@@ -123,7 +147,34 @@
       <file leaf-file-name="post.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/post.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="56" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+            <state line="12" column="96" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="5" selection-start="95" selection-end="103" vertical-scroll-proportion="-2.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="181" column="6" selection-start="2800" selection-end="2800" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_unapproved_posts.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/mylayouts/_unapproved_posts.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="76" selection-start="166" selection-end="166" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
@@ -147,22 +198,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/admin/tag.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/tag_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/views/posts/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/tag/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/tags_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/tags/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/admin/post.rb" />
-        <option value="$PROJECT_DIR$/app/views/posts/show.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/posts/index.html.haml" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/views/tags/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/tags_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/my_layouts/sidebar.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/tags/index.html.haml" />
+        <option value="$PROJECT_DIR$/db/migrate/20130606095617_add_status_and_explanation.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130606095617_add_status_and_explanation_to_posts.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130606100739_add_status_and_explanation_to_posts.rb" />
+        <option value="$PROJECT_DIR$/app/views/mylayouts/_sidebar.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/posts/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/models/post.rb" />
+        <option value="$PROJECT_DIR$/app/views/mylayouts/_unapproved_posts.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/posts/index.html.haml" />
       </list>
     </option>
   </component>
@@ -206,7 +257,6 @@
     </navigator>
     <panes>
       <pane id="RailsProjectView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -222,52 +272,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Rails-first-try" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails-first-try" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails-first-try" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails-first-try" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails-first-try" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails-first-try" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails-first-try" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -312,6 +316,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mylayouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -397,12 +445,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -794,14 +843,14 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32945737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27169812" sideWeight="0.72739017" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27260983" sideWeight="0.49962264" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28075472" sideWeight="0.67054266" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27260983" sideWeight="0.49962264" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29457363" sideWeight="0.50037736" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32816538" sideWeight="0.49962264" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43152454" sideWeight="0.49962264" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -875,114 +924,129 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="4" selection-start="953" selection-end="988" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tags/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="16" selection-start="200" selection-end="200" vertical-scroll-proportion="0.17681728">
+        <state line="10" column="2" selection-start="255" selection-end="255" vertical-scroll-proportion="-6.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/admin_user.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130606100739_add_status_and_explanation_to_posts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="67" selection-start="276" selection-end="276" vertical-scroll-proportion="0.39855072">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="6" selection-start="2800" selection-end="2800" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tags_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="25" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="24" selection-start="718" selection-end="718" vertical-scroll-proportion="-15.625">
+        <state line="14" column="37" selection-start="352" selection-end="352" vertical-scroll-proportion="0.28915662">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
+    <entry file="uml://RailsDependency/#Rails-first-try">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>RailsDependency</ID>
+          <OriginalElement>#Rails-first-try</OriginalElement>
+          <nodes>
+            <node x="" y="">User</node>
+            <node x="" y="">AdminUser</node>
+            <node x="" y="">PostTag</node>
+            <node x="" y="">Post</node>
+            <node x="" y="">Tag</node>
+            <node x="" y="">Comment</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6235795454545454" x="704.0" y="320.3507972665148" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Association fields</Category>
+            <Category>Migration fields</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/mylayouts/_sidebar.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="10" column="63" selection-start="227" selection-end="251" vertical-scroll-proportion="0.36144578">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin_user.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/tags/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="59" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130531102200_add_user_to_post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130603144053_create_admin_notes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130603144054_move_admin_notes_to_comments.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="67" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.7860262">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130603144044_devise_create_admin_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="44" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/active_admin.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.9549718">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="38" selection-start="345" selection-end="345" vertical-scroll-proportion="-3.7083333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="73" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
+        <state line="11" column="91" selection-start="228" selection-end="228" vertical-scroll-proportion="0.375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/post.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="56" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+        <state line="12" column="96" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="102" selection-start="1002" selection-end="1002" vertical-scroll-proportion="-15.583333">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="70" selection-start="976" selection-end="976" vertical-scroll-proportion="0.2251407">
+        <state line="57" column="49" selection-start="1578" selection-end="1578" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/mylayouts/_unapproved_posts.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="76" selection-start="166" selection-end="166" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="5" selection-start="95" selection-end="103" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="55" selection-start="90" selection-end="90" vertical-scroll-proportion="0.10227273">
           <folding />
         </state>
       </provider>

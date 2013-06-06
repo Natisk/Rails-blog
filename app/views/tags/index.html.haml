@@ -8,6 +8,7 @@
     %th Edit
     %th Delete
   - @tags.each do |tag|
+  - @sidetag = tag
     %tr
       %td= tag.id
       %td= tag.tag_word

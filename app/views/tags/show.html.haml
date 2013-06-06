@@ -1,0 +1,12 @@
+.tag_title
+  %b Tag:
+  %span= @tag.tag_word
+.posts
+  - unless @tag.posts.empty?
+    - @tag.posts.each do |post|
+      |
+      .tag_posts
+        %span
+          Post title -
+        = link_to post.title, post_path(post.id)
+    |

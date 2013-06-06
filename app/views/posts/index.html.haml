@@ -1,30 +1,47 @@
-%h1.to_c.selector List of all posts on this site
-.new_post_cr
-  = link_to 'New Post', new_post_path, :class=>"btn"
-%table.table.table-bordered.table-hover.table-condensed
-  %tr
-    %th Title
-    %th Body
-    %th Data
-    %th Show
-    %th Edit
-    %th Delete
-  - @posts.each do |post|
+.sidebar-first
+  = render :partial => 'mylayouts/sidebar.html'
+.main_content
+  - if notice
+    %p#notice
+      = notice
+  %h1.to_c.selector List of all posts on this site
+  .new_post_cr
+    = link_to 'New Post', new_post_path, :class=>"btn"
+  %table.table.table-bordered.table-hover.table-condensed
     %tr
-      %td= post.title
-      %td= post.body
-      %td= post.data
-      %td.action= link_to 'Show', post, :class=>"icon-eye-open", :title=>"Show"
-      %td.action
-        - if user_signed_in?
-          - if post.user == current_user
-            = link_to 'Edit', edit_post_path(post), :class=>"icon-edit", :title=>"Edit"
+      %th Title
+      %th Body
+      %th Data
+      %th Show
+      %th Edit
+      %th Delete
+      %th Status
+    - @posts.each do |post|
+      %tr
+        %td= post.title
+        %td= post.body
+        %td= post.data
+        %td.action= link_to 'Show', post, :class=>"icon-eye-open", :title=>"Show"
+        %td.action
+          - if user_signed_in?
+            - if post.user == current_user
+              = link_to 'Edit', edit_post_path(post), :class=>"icon-edit", :title=>"Edit"
+            - else
+              %s edit
           - else
             %s edit
-      %td.action
-        - if user_signed_in?
-          - if post.user == current_user
-            = link_to post, :method=> :delete, :confirm => "Are you sure?"
+        %td.action
+          - if user_signed_in?
+            - if post.user == current_user
+              .icon-remove.action-delete
+                = link_to 'Delete', post, :method=> :delete, :confirm => "Are you sure?"
+            - else
+              %s delete
           - else
             %s delete
-= paginate @posts
+        %td.status
+          - if post.status
+            .icon-ok
+          - else
+            .icon-exclamation-sign
+  = paginate @posts

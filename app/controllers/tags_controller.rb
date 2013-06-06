@@ -10,11 +10,19 @@ class TagsController < ApplicationController
   end
 
   def new
-    @tags = Tag.new
+    @tag = Tag.new
   end
 
   def create
-    @tags = Tag.new(params[:tag_word])
+    @tag = Tag.find_or_create_by_tag_word(tag_word)
+  end
+
+  def show
+    @tag = Tag.find(params[:id])
+  end
+
+  def update
+    @tag = Tag.find(params[:id])
   end
 
 end
