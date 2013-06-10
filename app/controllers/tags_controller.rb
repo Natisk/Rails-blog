@@ -14,7 +14,7 @@ class TagsController < ApplicationController
   end
 
   def create
-    @tag = Tag.find_or_create_by_tag_word(tag_word)
+    @tag = Tag.find_by_tag_word_or_create(tag_word)
   end
 
   def show

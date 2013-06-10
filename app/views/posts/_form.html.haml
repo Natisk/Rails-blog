@@ -8,25 +8,30 @@
         - @post.errors.full_messages.each do |msg|
           %li= msg
   .field
-    = f.label :title
-    %br/
+    .labels
+      = f.label :title
+    .text
     = f.text_field :title
   .field
+    .labels
     = f.label :body
-    %br/
+    .body
     = f.text_area :body
-  .field
-    = f.label :Tags
-    %br/
-    = f.fields_for :tags, Tag.new do |tag_field|
-      = tag_field.text_field :tag_word
-
-    -#= f.autocomplete_field :tags, :url => tags_path
+  .fields_tag
+    .labels
+      = f.label :Tag
+    .text_field
+    = f.fields_for :tags, @post.tags.empty? ? Tag.new : @post.tags do |tag_field|
+      = tag_field.text_field :tag_word, :class=>"field_tag"
+  .add_tag.btn
+    %span
+      Add Tag
   .for_img
     %img{:src => "/image1.jpg"}/
   .field
-    = f.label :data
-    %br/
+    .labels
+      = f.label :data
+    .date_field
     = f.datetime_select :data
   .actions
     = f.submit

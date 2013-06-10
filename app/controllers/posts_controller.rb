@@ -6,8 +6,9 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.nothidden.order("created_at desc").page(params[:page]).per(5)
-    #@posts = Post.nothidden.order(:name).page(params[:page]).per(2)
-
+    if user_signed_in?
+      @user_posts = current_user.posts.order("created_at desc").limit(5)
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @posts }
@@ -19,7 +20,8 @@ class PostsController < ApplicationController
   def show
     @post = Post.nothidden.includes([:comments, :tags]).find(params[:id])
     @comment = Comment.new
-
+    @user_posts = current_user.posts.order("created_at desc").limit(5)
+    @posts = Post.nothidden.order("created_at desc")
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @post }
@@ -55,7 +57,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @posts.unapproved.size >= 3
-        format.html { redirect_to posts_path, notice: 'You cant post more than 3 unapproved posts'  }
+        format.html { redirect_to posts_path, notice: 'You cant post more than 3 unapproved posts' }
       elsif @post.save
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render json: @post, status: :created, location: @post }

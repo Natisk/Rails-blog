@@ -7,41 +7,37 @@
   %h1.to_c.selector List of all posts on this site
   .new_post_cr
     = link_to 'New Post', new_post_path, :class=>"btn"
-  %table.table.table-bordered.table-hover.table-condensed
-    %tr
-      %th Title
-      %th Body
-      %th Data
-      %th Show
-      %th Edit
-      %th Delete
-      %th Status
-    - @posts.each do |post|
-      %tr
-        %td= post.title
-        %td= post.body
-        %td= post.data
-        %td.action= link_to 'Show', post, :class=>"icon-eye-open", :title=>"Show"
-        %td.action
-          - if user_signed_in?
-            - if post.user == current_user
-              = link_to 'Edit', edit_post_path(post), :class=>"icon-edit", :title=>"Edit"
+  - if @posts
+    .posts
+      - @posts.each do |post|
+        - post.body
+        .post
+          .post_header
+            .post_title
+              = link_to post.title, post
+            .post_date
+              = post.data
+          .post_text
+            =  truncate(post.body, :length =>255)
+          .post_actions
+            - if user_signed_in?
+              - if post.user == current_user
+                %span.edit.actions
+                  = link_to 'Edit', edit_post_path(post), :class=>"icon-edit", :title=>"Edit"
+            - if user_signed_in?
+              - if post.user == current_user
+                %span.delete.actions.icon-remove.action-delete
+                  = link_to 'Delete', post, :method=> :delete, :confirm => "Are you sure?"
+            - if post.status
+              .icon-ok
             - else
-              %s edit
-          - else
-            %s edit
-        %td.action
+              .icon-exclamation-sign
           - if user_signed_in?
-            - if post.user == current_user
-              .icon-remove.action-delete
-                = link_to 'Delete', post, :method=> :delete, :confirm => "Are you sure?"
-            - else
-              %s delete
-          - else
-            %s delete
-        %td.status
-          - if post.status
-            .icon-ok
-          - else
-            .icon-exclamation-sign
+            -if post.user == current_user && post.explanation
+              - unless post.status
+                .explanation
+                  %span
+                    Reason -
+                  %span.alert
+                    = post.explanation
   = paginate @posts

@@ -100,14 +100,14 @@ ActiveAdmin.setup do |config|
   # Admin comments are enabled by default.
   #
   # Default:
-  # config.allow_comments = true
+  config.allow_comments = true
   #
   # You can turn them on and off for any given namespace by using a
   # namespace config block.
   #
   # Eg:
   #   config.namespace :without_comments do |without_comments|
-  #     without_comments.allow_comments = false
+  #   without_comments.allow_comments = false
   #   end
 
 

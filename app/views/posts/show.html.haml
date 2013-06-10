@@ -1,5 +1,27 @@
 .sidebar-first
-  = render :partial => 'mylayouts/sidebar.html'
+  .tags_list
+    %h3 Tags list
+    - @tags = Tag.all
+    .tags
+      %ul
+        - @tags.each do |tag|
+          %li
+            = link_to tag.tag_word, tag_path(tag.id)
+
+  - if user_signed_in?
+    .user_posts
+      %h3 Your last posts
+      - if @posts
+        - @user_posts.each do |user_post|
+          .post
+            .post_title
+              = link_to user_post.title, post_path(user_post.id)
+            - if user_post.status
+              .approved
+                approved
+            - else
+              .unapproved
+                unapproved
 .main_content
   -if notice
     %p#notice

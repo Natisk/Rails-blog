@@ -3,7 +3,9 @@
     %title Blog15min
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
-    = javascript_include_tag "autocomplete-rails.js"
+    %script{src: '/javascripts/jquery.mousewheel.min.js', type: 'text/javascript'}
+    %script{src: '/javascripts/jquery.tagsphere.min.js', type: 'text/javascript'}
+    %script{src: '/javascripts/my.js', type: 'text/javascript'}
     = csrf_meta_tags
   %body.body
     .container1
