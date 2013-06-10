@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_filter :authenticate_user!, :except => [:show, :index]
   before_filter :current_post, :only => [:update, :destroy, :edit]
-  autocomplete :tag, :tag_word
+  before_filter :all_tags
   # GET /posts
   # GET /posts.json
   def index
@@ -92,6 +92,10 @@ class PostsController < ApplicationController
 
   def current_post
     @post = current_user.posts.find(params[:id])
+  end
+
+  def all_tags
+    @tags = Tag.all
   end
 
 end

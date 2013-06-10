@@ -1,5 +1,7 @@
 class TagsController < ApplicationController
 
+
+
   def index
     @tags = Tag.all
 
@@ -24,5 +26,6 @@ class TagsController < ApplicationController
   def update
     @tag = Tag.find(params[:id])
   end
+
 
 end

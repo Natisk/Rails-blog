@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: blog_comments
+#
+#  id         :integer          not null, primary key
+#  commenter  :string(255)
+#  body       :text
+#  post_id    :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  user_id    :integer
+#
+
 class BlogComment < ActiveRecord::Base
   belongs_to :post
   belongs_to :user

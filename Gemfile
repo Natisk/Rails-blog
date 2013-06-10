@@ -32,7 +32,7 @@ gem 'activeadmin'
 gem 'jquery-ui-rails'
 gem 'acts-as-taggable-on'
 gem 'rails3-jquery-autocomplete'
-
+gem 'annotate', ">=2.5.0"
 
 
 # To use ActiveModel has_secure_password

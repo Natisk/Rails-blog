@@ -1,3 +1,18 @@
+# == Schema Information
+#
+# Table name: posts
+#
+#  id          :integer          not null, primary key
+#  title       :string(255)
+#  body        :text
+#  data        :datetime
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  user_id     :integer
+#  status      :boolean          default(FALSE)
+#  explanation :text
+#
+
 class Post < ActiveRecord::Base
   attr_accessible :body, :data, :title, :tags_attributes, :status, :explanation, :user_id
   validates :title, :body, :presence => true  
