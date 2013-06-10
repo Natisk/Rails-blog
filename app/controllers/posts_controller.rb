@@ -18,8 +18,8 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @post = Post.nothidden.includes([:comments, :tags]).find(params[:id])
-    @comment = Comment.new
+    @post = Post.nothidden.includes([:blog_comments, :tags]).find(params[:id])
+    @blog_comment = BlogComment.new
     @user_posts = current_user.posts.order("created_at desc").limit(5)
     @posts = Post.nothidden.order("created_at desc")
     respond_to do |format|

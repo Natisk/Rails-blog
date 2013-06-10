@@ -9,14 +9,13 @@ Blog15min::Application.routes.draw do
 
 
   resources :posts do
-    resources :comments
-    get :autocomplete_tag_name, :on => :collection
+    resources :blog_comments
   end
 
   resources :tags
 
 
-  #resources :comments
+  #resources :blog_comments
 
 
   #resources :posts
@@ -50,13 +49,13 @@ Blog15min::Application.routes.draw do
 
   # Sample resource route with sub-resources:
   #   resources :products do
-  #     resources :comments, :sales
+  #     resources :blog_comments, :sales
   #     resource :seller
   #   end
 
   # Sample resource route with more complex sub-resources
   #   resources :products do
-  #     resources :comments
+  #     resources :blog_comments
   #     resources :sales do
   #       get 'recent', :on => :collection
   #     end

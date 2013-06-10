@@ -5,9 +5,9 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :comments, :dependent => :destroy
-  has_many :posts
-  attr_accessible :email, :password, :password_confirmation, :remember_me
+  has_many :blog_comments, :dependent => :destroy
+  has_many :posts, :dependent => :destroy
+  attr_accessible :email, :username, :password, :password_confirmation, :remember_me
 
 
 end

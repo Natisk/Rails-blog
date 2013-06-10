@@ -8,7 +8,7 @@ class CommentsControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:comments)
+    assert_not_nil assigns(:blog_comments)
   end
 
   test "should get new" do

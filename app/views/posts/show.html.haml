@@ -42,24 +42,24 @@
           = link_to tag.tag_word, tag_path(tag.id)
         |
     %h2 Comments
-    - @post.comments.each do |comment|
+    - @post.blog_comments.each do |blog_comment|
       .comment
         .commenter
           %strong Commenter:
-          = puts comment.id
-          = comment.user.email
+          = puts blog_comment.id
+          = blog_comment.user.email
         .comment_body
-          = comment.body
+          = blog_comment.body
         - if user_signed_in?
-          - if comment.user_id == current_user.id
+          - if blog_comment.user_id == current_user.id
             .edit_com
-              = link_to "Edit", edit_post_comment_path(@post, comment), :class=>"btn"
+              = link_to "Edit", edit_post_blog_comment_path(@post, blog_comment), :class=>"btn"
           - else
             .u_cant
               you can`t edit this post
 
     %h2 Add a comment:
-    = render :partial => 'comments/form'
+    = render :partial => 'blog_comments/form'
     - unless @post.user == current_user
       %s Edit
     - else

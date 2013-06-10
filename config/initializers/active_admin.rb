@@ -96,8 +96,8 @@ ActiveAdmin.setup do |config|
 
   # == Admin Comments
   #
-  # Admin comments allow you to add comments to any model for admin use.
-  # Admin comments are enabled by default.
+  # Admin blog_comments allow you to add blog_comments to any model for admin use.
+  # Admin blog_comments are enabled by default.
   #
   # Default:
   config.allow_comments = true
