@@ -252,7 +252,6 @@ span.edit.actions {
     height: 220px;
 }
 
-.post_title a {
-    font-size: 16px;
+.post_title a {                            font-size: 16px;
     color: #000000;
 }
