@@ -20,8 +20,12 @@ class PostsController < ApplicationController
   def show
     @post = Post.nothidden.includes([:blog_comments, :tags]).find(params[:id])
     @blog_comment = BlogComment.new
-    @user_posts = current_user.posts.order("created_at desc").limit(5)
+    if user_signed_in?
+      @user_posts = current_user.posts.order("created_at desc").limit(5)
+    end
+
     @posts = Post.nothidden.order("created_at desc")
+    @tags = Tag.all
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @post }

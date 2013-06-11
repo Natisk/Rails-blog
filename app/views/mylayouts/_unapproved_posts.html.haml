@@ -1,5 +1,5 @@
 -if user_signed_in?
   - @posts = current_user.posts.where(:status => false)
-  - if @posts.size > 0
+  - if @posts.count > 0
     .unapproved
-      = "Unapproved post(s) - " + @posts.size.to_s
+      = "Unapproved post(s) - " + @posts.count.to_s

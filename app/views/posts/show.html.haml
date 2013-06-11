@@ -1,7 +1,6 @@
 .sidebar-first
   .tags_list
     %h3 Tags list
-    - @tags = Tag.all
     .tags
       %ul
         - @tags.each do |tag|
