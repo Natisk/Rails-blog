@@ -39,7 +39,6 @@ class PostsController < ApplicationController
     #@post = Post.unapproved.new
     @posts = current_user.posts
     #@post.user_id = current_user.id
-    #@tag = @post.tags.find_or_create_by_tag_word(:tag_word)
     @tag = Tag.new
     respond_to do |format|
       format.html # new.html.erb
@@ -57,7 +56,8 @@ class PostsController < ApplicationController
     @post = current_user.posts.new(params[:post])
     @posts = current_user.posts
     #@post.user_id = current_user.id
-    #@tag = @post.tags.find_or_create_by_tag_word(:tag_word)
+    @tag = Tag.new
+    #@tags = @post.tags.find_or_create_by_tag_word(:tag_word)
 
     respond_to do |format|
       if @posts.unapproved.size >= 3

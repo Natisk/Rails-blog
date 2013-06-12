@@ -24,6 +24,17 @@ class Post < ActiveRecord::Base
   has_many :post_tags
   has_many :tags, :through=>:post_tags
   accepts_nested_attributes_for :tags
+  attr_accessor :tags_attributes
+  before_save :check_tag
+
+
+    def check_tag
+      self.tags.delete_all
+      self.tags = tags_attributes.map do |_, tag|
+        tag = Tag.find_or_create_by_tag_word(tag[:tag_word])
+        tag unless tag.new_record?
+      end.compact
+    end
 
 
 

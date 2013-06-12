@@ -21,7 +21,7 @@
     .labels
       = f.label :Tag
     .text_field
-    = f.fields_for :tags, @post.tags.empty? ? Tag.new : @post.tags do |tag_field|
+    = f.fields_for :tags, @post.tags.empty? ? @tag : @post.tags do |tag_field|
       = tag_field.text_field :tag_word, :class=>"field_tag"
   .add_tag.btn
     %span

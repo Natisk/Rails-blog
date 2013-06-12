@@ -3,10 +3,9 @@
   %span= @tag.tag_word
 .posts
   - unless @tag.posts.empty?
+    %h3 Related Post(s)
     - @tag.posts.each do |post|
-      |
       .tag_posts
         %span
           Post title -
         = link_to post.title,  post_path(post.id)
-    |
