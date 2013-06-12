@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0962fe8c-22f6-483b-af8f-a0d4700758c9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/factories.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/mailer_macros.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/fixtures/user_mailer/password_reset" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/requests/password_resets_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/models/post_model_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/mailers/user_mailer_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/comments/_form.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/comments/edit.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/comments/index.html.erb" afterPath="" />
@@ -31,14 +39,43 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/new.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/tag/index.html.haml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/posts/_form.html.haml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/admin_users.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/comments.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/models.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/post_tags.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/posts.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/tags.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/users.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/functional/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/functional/comments_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/functional/posts_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/functional/tag_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/functional/user_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/integration/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/performance/browsing_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/admin_user_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/comment_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/helpers/comments_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/helpers/posts_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/helpers/tag_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/helpers/user_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/model_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/post_tag_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/post_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/tag_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/user_test.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Rails-first-try.iml" afterPath="$PROJECT_DIR$/.idea/Rails-first-try.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/index.html.haml" afterPath="$PROJECT_DIR$/app/views/posts/index.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/post.rb" afterPath="$PROJECT_DIR$/app/models/post.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tags/show.html.haml" afterPath="$PROJECT_DIR$/app/views/tags/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/tag.rb" afterPath="$PROJECT_DIR$/app/models/tag.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/tags_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/tags_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/test.rb" afterPath="$PROJECT_DIR$/config/environments/test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Rails-first-try.iws" />
@@ -64,7 +101,7 @@
     <file path="/new.html.erb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370003982721" ignored="false" />
     <file path="/_links.erb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370004701248" ignored="false" />
     <file path="/application_controller.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370005683888" ignored="false" />
-    <file path="/Gemfile" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370265991671" ignored="false" />
+    <file path="/Gemfile" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1371049207000" ignored="false" />
     <file path="/index.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370969194989" ignored="false" />
     <file path="/README.md" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370270202123" ignored="false" />
     <file path="/active_admin.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370853505584" ignored="false" />
@@ -89,6 +126,12 @@
     <file path="/edit.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370863024322" ignored="false" />
     <file path="/dashboard.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370865039687" ignored="false" />
     <file path="/a.dummy" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370956780178" ignored="false" />
+    <file path="/factory.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1371040688499" ignored="false" />
+    <file path="/spec_helper.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1371049391148" ignored="false" />
+    <file path="/password_resets_controller.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1371044811306" ignored="false" />
+    <file path="/password_resets_spec.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1371048079282" ignored="false" />
+    <file path="/factories.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1371047664902" ignored="false" />
+    <file path="/post_model_spec.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1371056563057" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,21 +168,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/admin/dashboard.rb" />
-        <option value="$PROJECT_DIR$/app/models/blog_comment.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/views/mylayouts/_sidebar.html.haml" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/mylayouts/_unapproved_posts.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/posts/show.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/posts/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/tag.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tags_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/tags/show.html.haml" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/views/posts/index.html.haml" />
+        <option value="$PROJECT_DIR$/spec/support/mailer_macros.rb" />
+        <option value="$PROJECT_DIR$/config/environments/test.rb" />
+        <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/mailers/user_mailer_spec.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/password_resets_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/factory.rb" />
+        <option value="$PROJECT_DIR$/spec/factories.rb" />
+        <option value="$PROJECT_DIR$/spec/requests/password_resets_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/spec/models/post_model_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/post.rb" />
       </list>
     </option>
@@ -211,7 +254,89 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -242,7 +367,7 @@
       <recent name="$PROJECT_DIR$/app/assets/images" />
     </key>
   </component>
-  <component name="RunManager" selected="Rails.Development: Rails-first-try">
+  <component name="RunManager" selected="Rake.spec">
     <configuration default="false" name="routes" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="Rails-first-try" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -503,6 +628,8 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
     <configuration default="false" name="Production: Rails-first-try" type="RailsRunConfigurationType" factoryName="Rails">
@@ -564,13 +691,13 @@
       <method />
     </configuration>
     <list size="7">
-      <item index="0" class="java.lang.String" itemvalue="Rake.routes" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.show.html.erb" />
-      <item index="2" class="java.lang.String" itemvalue="IRB console.Rails console: Rails-first-try" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="5" class="java.lang.String" itemvalue="Rails.Production: Rails-first-try" />
-      <item index="6" class="java.lang.String" itemvalue="Rails.Development: Rails-first-try" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="2" class="java.lang.String" itemvalue="Rails.Production: Rails-first-try" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Development: Rails-first-try" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.routes" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.show.html.erb" />
+      <item index="6" class="java.lang.String" itemvalue="IRB console.Rails console: Rails-first-try" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -612,12 +739,14 @@
     <frame x="64" y="-4" width="1377" height="905" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945737" sideWeight="0.49962264" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30716982" sideWeight="0.7209302" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27906978" sideWeight="0.49962264" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30716982" sideWeight="0.72997415" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27906978" sideWeight="0.49962264" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29457363" sideWeight="0.50037736" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27002585" sideWeight="0.49962264" order="2" side_tool="false" content_ui="tabs" />
@@ -625,8 +754,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945737" sideWeight="0.49962264" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -695,105 +822,114 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/admin/admin_user.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments/test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/dashboard.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="52" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="48" selection-start="379" selection-end="379" vertical-scroll-proportion="0.16818182" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tags_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="5" selection-start="377" selection-end="377" vertical-scroll-proportion="0.7758621" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tags/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="49" selection-start="239" selection-end="239" vertical-scroll-proportion="0.3409091" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mylayouts/_sidebar.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="56" selection-start="431" selection-end="431" vertical-scroll-proportion="-6.875">
+        <state line="30" column="85" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.6818182">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="70" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.71428573">
-          <folding>
-            <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#2;tag#div#1" expanded="false" />
-            <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#div#2;tag#div#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/password_reset.text.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/spec/fixtures/user_mailer/password_reset">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin_user.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/password_resets_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="8" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="0.16689847">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/tag.rb">
+    <entry file="file://$PROJECT_DIR$/spec/mailers/user_mailer_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="39" selection-start="305" selection-end="305" vertical-scroll-proportion="0.3409091">
+        <state line="15" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.31293464">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p429@feedinformer/gems/activerecord-3.2.12/lib/active_record/persistence.rb">
+    <entry file="file://$PROJECT_DIR$/spec/factories.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="8" selection-start="2207" selection-end="2207" vertical-scroll-proportion="1.5145631">
+        <state line="3" column="1" selection-start="103" selection-end="103" vertical-scroll-proportion="0.062586926">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/functional/comments_controller_test.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="65" selection-start="250" selection-end="250" vertical-scroll-proportion="0.3125">
+        <state line="82" column="13" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.21246459">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
+    <entry file="file://$PROJECT_DIR$/spec/support/mailer_macros.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="57" selection-start="966" selection-end="966" vertical-scroll-proportion="0.4318182">
+        <state line="8" column="3" selection-start="149" selection-end="149" vertical-scroll-proportion="0.16129032">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="31" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="103" selection-start="978" selection-end="978" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Guardfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="76" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.49247605">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="72" selection-start="2498" selection-end="2498" vertical-scroll-proportion="0.8011364">
+        <state line="89" column="72" selection-start="2498" selection-end="2498" vertical-scroll-proportion="0.6814516">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="74" selection-start="151" selection-end="151" vertical-scroll-proportion="0.12096774">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/post_model_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="3" selection-start="846" selection-end="846" vertical-scroll-proportion="0.4233871">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="16" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/requests/password_resets_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="57" selection-start="170" selection-end="170" vertical-scroll-proportion="0.12096774">
           <folding />
         </state>
       </provider>

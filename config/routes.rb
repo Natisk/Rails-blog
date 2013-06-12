@@ -1,4 +1,6 @@
 Blog15min::Application.routes.draw do
+  get "password_resets/new"
+
   root :to => 'posts#index'
   devise_for :users, :path_names=>{sign_up: 'register'}
   ActiveAdmin.routes(self)

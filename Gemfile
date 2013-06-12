@@ -34,6 +34,14 @@ gem 'acts-as-taggable-on'
 gem 'rails3-jquery-autocomplete'
 gem 'annotate', ">=2.5.0"
 
+gem "rspec-rails", :group => [:test, :development]
+group :test do
+  gem "factory_girl_rails"
+  gem "capybara", "~> 2.1.0"
+  gem "guard-rspec"
+  gem "shoulda-matchers"
+end
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
