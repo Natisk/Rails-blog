@@ -16,7 +16,7 @@ development:
 test:
   adapter: postgresql
   encoding: utf8
-  username: 
+  username:
   password: 
   database: blog15_test
 
