@@ -1,5 +1,5 @@
 .sidebar-first
-  / = render :partial => 'mylayouts/sidebar.html'
+  = render :partial => 'mylayouts/sidebar.html'
 .main_content
   - if notice
     %p#notice
@@ -7,7 +7,7 @@
   %h1.to_c.selector List of all posts on this site
   .new_post_cr
     = link_to 'New Post', new_post_path, :class=>"btn"
-  - if @posts
+  - unless @posts.nil?
     .posts
       - @posts.each do |post|
         .post{:class => "#{post.id}"}

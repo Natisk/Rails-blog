@@ -59,8 +59,11 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/post_test.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/tag_test.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/user_test.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/production.log" afterPath="$PROJECT_DIR$/log/production.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/test.log" afterPath="$PROJECT_DIR$/log/test.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/mylayouts/_sidebar.html.haml" afterPath="$PROJECT_DIR$/app/views/mylayouts/_sidebar.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/index.html.haml" afterPath="$PROJECT_DIR$/app/views/posts/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/show.html.haml" afterPath="$PROJECT_DIR$/app/views/posts/show.html.haml" />
     </list>
     <ignored path="Rails-first-try.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,7 +80,7 @@
     <file path="/fragment.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370357307739" ignored="false" />
     <file path="/edit.html.erb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1369915284180" ignored="false" />
     <file path="/_form.html.erb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370248141439" ignored="false" />
-    <file path="/posts_controller.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1371461201689" ignored="false" />
+    <file path="/posts_controller.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1371483189621" ignored="false" />
     <file path="/post.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1371202085714" ignored="false" />
     <file path="/kaminari_config.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1369921556091" ignored="false" />
     <file path="/application.css" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370616118723" ignored="false" />
@@ -86,7 +89,7 @@
     <file path="/_links.erb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370004701248" ignored="false" />
     <file path="/application_controller.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370005683888" ignored="false" />
     <file path="/Gemfile" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1371049207000" ignored="false" />
-    <file path="/index.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1371472302226" ignored="false" />
+    <file path="/index.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1371483289247" ignored="false" />
     <file path="/README.md" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370270202123" ignored="false" />
     <file path="/active_admin.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370853505584" ignored="false" />
     <file path="/tag.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1371469888608" ignored="false" />
@@ -97,7 +100,7 @@
     <file path="/_form.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370950698908" ignored="false" />
     <file path="/show.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370957699544" ignored="false" />
     <file path="/sidebar.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370509006741" ignored="false" />
-    <file path="/_sidebar.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370612701156" ignored="false" />
+    <file path="/_sidebar.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1371482215273" ignored="false" />
     <file path="/20130606095617_add_status_and_explanation.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370512739950" ignored="false" />
     <file path="/20130606100739_add_status_and_explanation_to_posts.rb" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370513851609" ignored="false" />
     <file path="/_unapproved_posts.html.haml" changelist="0962fe8c-22f6-483b-af8f-a0d4700758c9" time="1370876031234" ignored="false" />
@@ -148,17 +151,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="post_controller_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/controllers/post_controller_spec.rb">
+      <file leaf-file-name="posts_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="4" selection-start="228" selection-end="310" vertical-scroll-proportion="0.0">
+            <state line="101" column="19" selection-start="2674" selection-end="2674" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <file leaf-file-name="_sidebar.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/mylayouts/_sidebar.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="19" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tags_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/tags_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -166,28 +178,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.8294931">
+            <state line="1" column="43" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog_comments_controller_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/controllers/blog_comments_controller_spec.rb">
+      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="83" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
+            <state line="7" column="75" selection-start="185" selection-end="185" vertical-scroll-proportion="-4.375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog_comments_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/blog_comments_controller.rb">
+      <file leaf-file-name="_unapproved_posts.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/mylayouts/_unapproved_posts.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="75" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
+            <state line="5" column="19" selection-start="168" selection-end="168" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
@@ -211,8 +223,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
-        <option value="$PROJECT_DIR$/spec/controllers/post_controller.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/user_controller.rb" />
         <option value="$PROJECT_DIR$/spec/support/controller_macros.rb" />
         <option value="$PROJECT_DIR$/spec/models/user_model_spec.rb" />
@@ -220,13 +230,15 @@
         <option value="$PROJECT_DIR$/spec/models/blog_comments_spec.rb" />
         <option value="$PROJECT_DIR$/spec/factories/user.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/user_controller_spec.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/spec/factories/tag.rb" />
-        <option value="$PROJECT_DIR$/app/views/posts/index.html.haml" />
         <option value="$PROJECT_DIR$/spec/views/posts/index.html.haml_spec.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/post_controller_spec.rb" />
         <option value="$PROJECT_DIR$/spec/views/posts/show.html.haml_spec.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/blog_comments_controller_spec.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/posts/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/mylayouts/_sidebar.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/posts/show.html.haml" />
       </list>
     </option>
   </component>
@@ -388,6 +400,90 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="environments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mylayouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails-first-try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1061,44 +1157,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/tags_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="218" column="33" selection-start="17766" selection-end="17766" vertical-scroll-proportion="0.81947744">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories/post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="187" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/factories/tag.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="58" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="67" selection-start="121" selection-end="121" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mylayouts/_sidebar.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="42" selection-end="42" vertical-scroll-proportion="0.10344828">
           <folding />
         </state>
       </provider>
@@ -1117,13 +1178,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/factories/blog_comment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1134,13 +1188,6 @@
     <entry file="file://$PROJECT_DIR$/spec/controllers/blog_comments_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="83" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/blog_comments_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="75" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1159,9 +1206,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/blog_comments_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="4" column="75" selection-start="168" selection-end="168" vertical-scroll-proportion="-1.2096775">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/mylayouts/_unapproved_posts.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="168" selection-end="168" vertical-scroll-proportion="-3.125">
           <folding />
         </state>
       </provider>
@@ -1169,6 +1223,48 @@
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.8294931">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.10368664">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="19" selection-start="2674" selection-end="2674" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="75" selection-start="185" selection-end="185" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/mylayouts/_sidebar.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="19" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="43" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tags_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

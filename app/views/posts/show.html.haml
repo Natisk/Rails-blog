@@ -1,16 +1,17 @@
 .sidebar-first
-  .tags_list
-    %h3 Tags list
-    .tags
-      %ul
-        - @tags.each do |tag|
-          %li
-            = link_to tag.tag_word, tag_path(tag.id)
+  - unless @tags.nil?
+    .tags_list
+      %h3 Tags list
+      .tags
+        %ul
+          - @tags.each do |tag|
+            %li
+              = link_to tag.tag_word, tag_path(tag.id)
 
   - if user_signed_in?
     .user_posts
       %h3 Your last posts
-      - if @posts
+      - if @user_posts
         - @user_posts.each do |user_post|
           .post
             .post_title
