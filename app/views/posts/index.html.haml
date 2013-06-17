@@ -1,5 +1,5 @@
 .sidebar-first
-  = render :partial => 'mylayouts/sidebar.html'
+  / = render :partial => 'mylayouts/sidebar.html'
 .main_content
   - if notice
     %p#notice
@@ -37,8 +37,5 @@
                     Reason -
                   %span.alert
                     = post.explanation
-          - else
-            %span
-              hi man
 
   = paginate @posts

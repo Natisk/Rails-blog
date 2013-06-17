@@ -60,7 +60,7 @@ class PostsController < ApplicationController
     #@tags = @post.tags.find_or_create_by_tag_word(:tag_word)
 
     respond_to do |format|
-      if @posts.unapproved.size >= 3
+      if @posts.unapproved.count >= 3
         format.html { redirect_to posts_path, notice: 'You cant post more than 3 unapproved posts' }
       elsif @post.save
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
