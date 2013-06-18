@@ -11,18 +11,18 @@
     .labels
       = f.label :title
     .text
-    = f.text_field :title
+      = f.text_field :title
   .field
     .labels
-    = f.label :body
+      = f.label :body
     .body
-    = f.text_area :body
+      = f.text_area :body
   .fields_tag
     .labels
       = f.label :Tag
     .text_field
-    = f.fields_for :tags, @post.tags.empty? ? @tag : @post.tags do |tag_field|
-      = tag_field.text_field :tag_word, :class=>"field_tag"
+      = f.fields_for :tags, @post.tags.empty? ? @tag : @post.tags do |tag_field|
+        = tag_field.text_field :tag_word, :class=>"field_tag"
   .add_tag.btn
     %span
       Add Tag

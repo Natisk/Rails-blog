@@ -34,6 +34,8 @@ describe 'user log in process', :js => true do
         fill_in 'Title', :with => 'New post creation'
         fill_in 'Body', :with => 'Body of my new post'
         find(:xpath, "//input[@id='post_tags_attributes_0_tag_word']").set 'css'
+        find('.add_tag').click
+        find(:xpath, "//input[@class='add_tag']").set 'cat'
       end
       click_button 'Create Post'
       page.should have_content('Post was successfully created')

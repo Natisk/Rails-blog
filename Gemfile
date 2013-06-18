@@ -37,9 +37,11 @@ gem 'annotate', ">=2.5.0"
 gem "rspec-rails", :group => [:test, :development]
 group :test do
   gem "factory_girl_rails"
-  gem "capybara", "~> 2.1.0"
+  gem "capybara"
   gem "guard-rspec"
   gem "shoulda-matchers"
+  gem 'selenium-webdriver'
+  gem "database_cleaner"
 end
 
 
