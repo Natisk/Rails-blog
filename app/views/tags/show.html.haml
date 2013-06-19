@@ -6,6 +6,10 @@
     %h3 Related Post(s)
     - @tag.posts.each do |post|
       .tag_posts
-        %span
-          Post title -
-        = link_to post.title,  post_path(post.id)
+        - if post.status
+          %span
+            Post title -
+          = link_to post.title,  post_path(post.id)
+        -else
+          %span
+            Post title - #{post.title}

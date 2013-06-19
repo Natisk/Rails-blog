@@ -15,24 +15,17 @@
 
 class Post < ActiveRecord::Base
 
-  attr_accessible :body,
-                  :data,
-                  :title,
-                  :tags_attributes,
-                  :status,
-                  :explanation,
-                  :user_id
-  validates       :title,
-                  :body,
-                  :user_id,
-                  :presence => true
-  has_many        :blog_comments,
-                  :dependent => :destroy
+  attr_accessible :body, :data, :title, :tags_attributes, :status, :explanation, :user_id
+  validates       :title,  :presence => true, :length => { :maximum => 250 }
+  validates       :body, :length => { :maximum => 1023 }, :presence => true
+  validates       :user_id, :presence => true
+  has_many        :blog_comments, :dependent => :destroy
   belongs_to :user
   has_many :post_tags, :dependent => :destroy
   has_many :tags, :through => :post_tags
   scope :nothidden,             -> { where("title  NOT LIKE '%hidden%' ") }
   scope :unapproved,            -> { where(:status => false) }
+  scope :approved,              -> { where(:status => true) }
   accepts_nested_attributes_for :tags
   attr_accessor :tags_attributes
   before_save :check_tag
@@ -44,5 +37,7 @@ class Post < ActiveRecord::Base
       tag unless tag.new_record?
     end.compact
   end
+
+
 
 end

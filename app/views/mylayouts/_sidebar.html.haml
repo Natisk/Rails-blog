@@ -21,3 +21,10 @@
           - else
             .unapproved
               unapproved
+            - if user_post.explanation
+              - unless user_post.status
+                .explanation
+                  %span
+                    Reason -
+                  %span.alert
+                    = user_post.explanation

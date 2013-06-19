@@ -6,10 +6,11 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.nothidden.order("created_at desc").page(params[:page]).per(5)
+    @posts = Post.nothidden.approved.order("created_at desc").page(params[:page]).per(5)
     if user_signed_in?
       @user_posts = current_user.posts.order("created_at desc").limit(5)
     end
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @posts }
@@ -19,12 +20,15 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @post = Post.nothidden.includes([:blog_comments, :tags]).find(params[:id])
-    @blog_comment = BlogComment.new
-    if user_signed_in?
+    unless user_signed_in?
+      @post = Post.nothidden.approved.includes([:blog_comments, :tags]).find(params[:id])
+    else
+      @post = Post.nothidden.includes([:blog_comments, :tags]).find(params[:id])
       @user_posts = current_user.posts.order("created_at desc").limit(5)
     end
+    @blog_comment = BlogComment.new
     @posts = Post.nothidden.order("created_at desc")
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @post }
@@ -37,6 +41,7 @@ class PostsController < ApplicationController
     @post = current_user.posts.new(params[:post])
     @posts = current_user.posts
     @tag = Tag.new
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @post }
@@ -49,7 +54,7 @@ class PostsController < ApplicationController
 
   # POST /posts
   # POST /posts.json
-  def create                                                                             #@post.user_id = current_user.id
+  def create
     @post = current_user.posts.new(params[:post])
     @posts = current_user.posts
     @tag = Tag.new
@@ -96,5 +101,6 @@ class PostsController < ApplicationController
   def all_tags
     @tags = Tag.joins(:posts).uniq
   end
+
 
 end
