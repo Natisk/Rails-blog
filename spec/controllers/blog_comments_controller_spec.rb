@@ -15,10 +15,4 @@ describe BlogCommentsController do
     response.should be_success
   end
 
-=begin
-  it "should get show" do
-    get :show, :id => @blog_comment
-    assigns(:blog_comment).should eq(@blog_comment)
-  end
-=end
 end

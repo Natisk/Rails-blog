@@ -38,25 +38,10 @@ describe PostsController do
       response.should redirect_to new_user_session_path
     end
 
-=begin
-    it "creates a new user" do
-      expect{
-        post :create, :user => FactoryGirl.attributes_for(:user)
-      }.to change(User,:count).by(1)
-    end
-=end
-
     it 'redirects to the sign_in' do
       post :create, user: FactoryGirl.attributes_for(:user)
       response.should redirect_to '/users/sign_in'
     end
-
-=begin
-    it "re-renders the new method" do
-      post :create, user: FactoryGirl.attributes_for(:invalid_user)
-      response.should render_template :new
-    end
-=end
 
   end
 

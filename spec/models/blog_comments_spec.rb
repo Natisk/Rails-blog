@@ -4,15 +4,6 @@ describe BlogComment do
   before (:each) do
     FactoryGirl.create(:blog_comment)
   end
-  #before do
-  #  @blog_comment = BlogComment.new(body:'Test')
-  #end
-
-  #describe "when body is too long" do
-  #  before { @blog_comment.body = "a" * 1025 }
-  #  it { should be_valid }
-  #end
-
 
   it { should belong_to(:user) }
   it { should belong_to(:post) }
