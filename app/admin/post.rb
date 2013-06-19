@@ -15,13 +15,6 @@ ActiveAdmin.register Post do
        j.inputs :tag_word
      end
    end
-=begin
- f.inputs 'Tag' do
-   f.fields_for :tags, @post.tags.empty? ? @tag : @post.tags do |tag_field|
-     tag_field.text_field :tag_word, :class=>'field_tag'
-   end
- end
-=end
    f.actions
   end
 end                                   

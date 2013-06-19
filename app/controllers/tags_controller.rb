@@ -1,11 +1,10 @@
 class TagsController < ApplicationController
 
   def index
-    @tags = Tag.all
+    @tags = Tag.joins(:posts)
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @posts }
     end
   end
 
@@ -14,7 +13,7 @@ class TagsController < ApplicationController
   end
 
   def create
-    #@tag = Tag.find_by_tag_word_or_create(:tag_word)
+
   end
 
   def show
@@ -22,7 +21,7 @@ class TagsController < ApplicationController
   end
 
   def update
-    #@tag = Tag.find(params[:id])
+
   end
 
 

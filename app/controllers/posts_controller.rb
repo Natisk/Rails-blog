@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   before_filter :authenticate_user!, :except => [:show, :index]
   before_filter :current_post, :only => [:update, :destroy, :edit]
   before_filter :all_tags
+
   # GET /posts
   # GET /posts.json
   def index
@@ -23,9 +24,7 @@ class PostsController < ApplicationController
     if user_signed_in?
       @user_posts = current_user.posts.order("created_at desc").limit(5)
     end
-
     @posts = Post.nothidden.order("created_at desc")
-    @tags = Tag.all
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @post }
@@ -36,9 +35,7 @@ class PostsController < ApplicationController
   # GET /posts/new.json
   def new
     @post = current_user.posts.new(params[:post])
-    #@post = Post.unapproved.new
     @posts = current_user.posts
-    #@post.user_id = current_user.id
     @tag = Tag.new
     respond_to do |format|
       format.html # new.html.erb
@@ -52,12 +49,10 @@ class PostsController < ApplicationController
 
   # POST /posts
   # POST /posts.json
-  def create
+  def create                                                                             #@post.user_id = current_user.id
     @post = current_user.posts.new(params[:post])
     @posts = current_user.posts
-    #@post.user_id = current_user.id
     @tag = Tag.new
-    #@tags = @post.tags.find_or_create_by_tag_word(:tag_word)
 
     respond_to do |format|
       if @posts.unapproved.count >= 3
@@ -66,7 +61,7 @@ class PostsController < ApplicationController
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render json: @post, status: :created, location: @post }
       else
-        format.html { render action: "new" }
+        format.html { render action: 'new' }
         format.json { render json: @post.errors, status: :unprocessable_entity }
       end
     end
@@ -77,7 +72,7 @@ class PostsController < ApplicationController
     if @post.update_attributes(params[:post])
       redirect_to @post, notice: 'Post was successfully updated.'
     else
-      render action: "edit"
+      render action: 'edit'
     end
   end
 
@@ -99,7 +94,7 @@ class PostsController < ApplicationController
   end
 
   def all_tags
-    @tags = Tag.all
+    @tags = Tag.joins(:posts).uniq
   end
 
 end

@@ -1,27 +1,5 @@
 .sidebar-first
-  - unless @tags.nil?
-    .tags_list
-      %h3 Tags list
-      .tags
-        %ul
-          - @tags.each do |tag|
-            %li
-              = link_to tag.tag_word, tag_path(tag.id)
-
-  - if user_signed_in?
-    .user_posts
-      %h3 Your last posts
-      - if @user_posts
-        - @user_posts.each do |user_post|
-          .post
-            .post_title
-              = link_to user_post.title, post_path(user_post.id)
-            - if user_post.status
-              .approved
-                approved
-            - else
-              .unapproved
-                unapproved
+  = render :partial => 'mylayouts/sidebar'
 .main_content
   -if notice
     %p#notice
@@ -61,7 +39,7 @@
     %h2 Add a comment:
     = render :partial => 'blog_comments/form'
     - unless @post.user == current_user
-      %s Edit
+      %span
     - else
       = link_to 'Edit', edit_post_path(@post)
       |

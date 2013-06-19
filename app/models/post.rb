@@ -29,7 +29,7 @@ class Post < ActiveRecord::Base
   has_many        :blog_comments,
                   :dependent => :destroy
   belongs_to :user
-  has_many :post_tags
+  has_many :post_tags, :dependent => :destroy
   has_many :tags, :through => :post_tags
   scope :nothidden,             -> { where("title  NOT LIKE '%hidden%' ") }
   scope :unapproved,            -> { where(:status => false) }
