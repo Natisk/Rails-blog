@@ -1,4 +1,7 @@
 ActiveAdmin.register User do
+
+  filter :email
+
   index do                            
     column :email                     
     column :current_sign_in_at        
@@ -6,9 +9,7 @@ ActiveAdmin.register User do
     column :sign_in_count
     column :username
     default_actions                   
-  end                                 
-
-  filter :email                       
+  end
 
   form do |f|                         
     f.inputs "User Details" do
@@ -18,5 +19,6 @@ ActiveAdmin.register User do
       f.input :password_confirmation  
     end                               
     f.actions                         
-  end                                 
+  end
+
 end                                   

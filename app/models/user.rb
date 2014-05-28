@@ -27,7 +27,7 @@ class User < ActiveRecord::Base
 
   has_many :blog_comments, :dependent => :destroy
   has_many :posts, :dependent => :destroy
-  attr_accessible :email, :username, :password, :password_confirmation, :remember_me
 
+  attr_accessible :email, :username, :password, :password_confirmation, :remember_me
 
 end
