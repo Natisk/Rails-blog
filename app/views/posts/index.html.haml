@@ -6,7 +6,7 @@
       = notice
   %h1.to_c.selector List of all posts on this site
   .new_post_cr
-    = link_to 'New Post', new_post_path, :class=>"btn"
+    = link_to 'New Post', new_post_path, :class => 'btn'
   - unless @posts.nil?
     .posts
       - @posts.each do |post|
@@ -17,17 +17,17 @@
             .post_date
               = post.data
           .post_text
-            =  truncate(post.body, :length =>255)
+            =  truncate(post.body, :length => 255)
           .post_actions
             - if user_signed_in?
               - if post.user == current_user
                 %span.edit.actions
-                  = link_to 'Edit', edit_post_path(post), :class=>"icon-edit", :title=>"Edit"
+                  = link_to 'Edit', edit_post_path(post), :class => 'icon-edit', :title => 'Edit'
                 %span.delete.actions.icon-remove.action-delete
-                  = link_to 'Delete', post, :method=> :delete, :confirm => "Are you sure?"
+                  = link_to 'Delete', post, :method => :delete, :confirm => 'Are you sure?'
             - if post.status
-              .icon-ok{:title => "approved"}
+              .icon-ok{:title => 'approved'}
             - else
-              .icon-exclamation-sign{:title => "not approved"}
+              .icon-exclamation-sign{:title => 'not approved'}
 
   = paginate @posts

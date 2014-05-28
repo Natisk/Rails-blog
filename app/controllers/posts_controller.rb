@@ -1,10 +1,9 @@
 class PostsController < ApplicationController
+
   before_filter :authenticate_user!, :except => [:show, :index]
   before_filter :current_post, :only => [:update, :destroy, :edit]
   before_filter :all_tags
 
-  # GET /posts
-  # GET /posts.json
   def index
     @posts = Post.nothidden.approved.order("created_at desc").page(params[:page]).per(5)
     if user_signed_in?
@@ -17,8 +16,6 @@ class PostsController < ApplicationController
     end
   end
 
-  # GET /posts/1
-  # GET /posts/1.json
   def show
     unless user_signed_in?
       @post = Post.nothidden.approved.includes([:blog_comments, :tags]).find(params[:id])
@@ -30,13 +27,11 @@ class PostsController < ApplicationController
     @posts = Post.nothidden.order("created_at desc")
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html
       format.json { render json: @post }
     end
   end
 
-  # GET /posts/new
-  # GET /posts/new.json
   def new
     @post = current_user.posts.new(params[:post])
     @posts = current_user.posts
@@ -48,12 +43,9 @@ class PostsController < ApplicationController
     end
   end
 
-  # GET /posts/1/edit
   def edit
   end
 
-  # POST /posts
-  # POST /posts.json
   def create
     @post = current_user.posts.new(params[:post])
     @posts = current_user.posts
@@ -72,7 +64,6 @@ class PostsController < ApplicationController
     end
   end
 
-  # PUT /posts/1
   def update
     if @post.update_attributes(params[:post])
       redirect_to @post, notice: 'Post was successfully updated.'
@@ -81,8 +72,6 @@ class PostsController < ApplicationController
     end
   end
 
-  # DELETE /posts/1
-  # DELETE /posts/1.json
   def destroy
     @post.destroy
 
@@ -94,13 +83,12 @@ class PostsController < ApplicationController
 
   private
 
-  def current_post
-    @post = current_user.posts.find(params[:id])
-  end
+    def current_post
+      @post = current_user.posts.find(params[:id])
+    end
 
-  def all_tags
-    @tags = Tag.joins(:posts).uniq
-  end
-
+    def all_tags
+      @tags = Tag.joins(:posts).uniq
+    end
 
 end

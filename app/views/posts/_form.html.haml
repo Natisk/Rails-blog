@@ -2,7 +2,7 @@
   - if @post.errors.any?
     #error_explanation
       %h2
-        = pluralize(@post.errors.count, "error")
+        = pluralize(@post.errors.count, 'error')
         prohibited this post from being saved:
       %ul
         - @post.errors.full_messages.each do |msg|
@@ -22,12 +22,12 @@
       = f.label :Tag
     .text_field
       = f.fields_for :tags, @post.tags.empty? ? @tag : @post.tags do |tag_field|
-        = tag_field.text_field :tag_word, :class=>"field_tag"
+        = tag_field.text_field :tag_word, :class=>'field_tag'
   .add_tag.btn
     %span
       Add Tag
   .for_img
-    %img{:src => "/image1.jpg"}/
+    %img{:src => '/image1.jpg'}
   .field
     .labels
       = f.label :data
