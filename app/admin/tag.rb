@@ -1,3 +1,5 @@
 ActiveAdmin.register Tag do
-    @tags = Tag.all
+
+  @tags = Tag.all
+
 end

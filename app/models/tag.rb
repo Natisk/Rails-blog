@@ -9,8 +9,12 @@
 #
 
 class Tag < ActiveRecord::Base
+
   has_many :post_tags
-  has_many :posts, :through=>:post_tags
+  has_many :posts, :through => :post_tags
+
   attr_accessible :tag_word
-  validates :tag_word, :length => { :maximum => 30 }
+
+  validates :tag_word, :length => {:maximum => 30}
+
 end

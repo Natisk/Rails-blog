@@ -24,5 +24,4 @@ class TagsController < ApplicationController
 
   end
 
-
 end
