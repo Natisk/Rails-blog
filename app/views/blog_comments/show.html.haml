@@ -10,7 +10,7 @@
   = @blog_comment.post
 - if blog_comment.user_id == current_user.id
   .edit_com
-    = link_to "Edit", edit_post_blog_comment_path(@post, blog_comment)
+    = link_to 'Edit', edit_post_blog_comment_path(@post, blog_comment)
 = link_to 'Edit', edit_blog_comment_path(@blog_comment)
 |
 \#{link_to 'Back', blog_comments_path}

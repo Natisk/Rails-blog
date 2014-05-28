@@ -1,3 +1,2 @@
-ActiveAdmin.register BlogComment, :as => "BlogComment" do
-
+ActiveAdmin.register BlogComment, :as => 'BlogComment' do
 end                                   
